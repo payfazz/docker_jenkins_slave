@@ -1,11 +1,11 @@
 # What is this ?
 
-This is source code for https://hub.docker.com/r/wint/jenkins_slave
+Docker image for jenkins slave, specialized for building with docker environment
 
 ## What is included ?
 
 This image inlucde:
-- java 8 jre
+- java 8 jre (needed for jenkins slave)
 - docker cli
 - ssh client
 - stdiotunnel
