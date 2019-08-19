@@ -5,11 +5,15 @@ Docker image for jenkins slave, specialized for building with docker environment
 ## What is included ?
 
 This image inlucde:
-- java 8 jre (needed for jenkins slave)
-- docker cli
-- ssh client
-- stdiotunnel
+- curl
+- docker-cli
+- git
+- make
+- openjdk8-jre (needed for jenkins slave)
+- openssh-client
 - rsync
+- docker-sh
+- stdiotunnel
 
 ## How to use ?
 
