@@ -7,6 +7,8 @@ if [ "$(id -u)" = "0" ]; then
   exec 1>>/logs/out.txt
   exec 2>>/logs/err.txt
   chown jenkins:jenkins -R /logs /jenkins
+  chmod 666 /var/run/docker.sock >/dev/null 2>&1 || :
+  chmod 666 /run/docker.sock >/dev/null 2>&1 || :
   export HOME=$(getent passwd jenkins | cut -d: -f6)
   UID=$(id -u jenkins)
   GID=$(id -g jenkins)
